@@ -1,0 +1,20 @@
+{
+  "name": "fyp-manager-backend",
+  "version": "1.0.0",
+  "description": "This is fyp-manager backend code.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashirshoaeb/FYP-Manager-backend.git"
+  },
+  "author": "Hashir Shoaib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashirshoaeb/FYP-Manager-backend/issues"
+  },
+  "homepage": "https://github.com/hashirshoaeb/FYP-Manager-backend#readme"
+}
