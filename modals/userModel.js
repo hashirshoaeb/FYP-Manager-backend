@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-const validator = require("validator");
-const bcrypt = require("bcrypt");
-const crypto = require("crypto");
+//const validator = require("validator");
+// const bcrypt = require("bcrypt");
+// const crypto = require("crypto");
 const useSchema = new mongoose.Schema({
   name: {
-    type: { type: String, required: [true, "Please tell us your name"] },
+    type: String,
   },
 
   email: {
@@ -12,7 +12,7 @@ const useSchema = new mongoose.Schema({
     required: [true, "Please tell us your email"],
     unique: true,
     lowercase: true,
-    validate: [validator.isEmail, "please provide a valid email"],
+    //validate: [validator.isEmail, "please provide a valid email"],
   },
 
   password: {
@@ -48,5 +48,5 @@ const useSchema = new mongoose.Schema({
     select: false,
   },
 });
-const User = mongoose.model("User", useSchema);
+const User = mongoose.model("Users", useSchema);
 module.exports = User;
