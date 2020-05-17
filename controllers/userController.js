@@ -1,5 +1,6 @@
 const User = require("./../modals/userModel");
-exports.getAllUsers = (req, res) => {
+exports.getAllUsers = async (req, res) => {
+  const users = await User.find();
   res.status(500).json({ status: "success", data: { users } });
 };
 exports.createUser = async (req, res) => {
@@ -10,10 +11,11 @@ exports.createUser = async (req, res) => {
       password: req.body.password,
       passwordConfirm: req.body.passwordConfirm,
     });
-    res.status(500).json({
-      status: "sccuess",
-      data: { newUser },
-    });
+    res.
+      status(500).json({
+        status: "sccuess",
+        data: { newUser },
+      });
   } catch (err) {
     res.status(500).json({
       status: "fail",
@@ -22,11 +24,13 @@ exports.createUser = async (req, res) => {
   }
 };
 
-exports.getUser = (req, res) => {
-  // res.status(500).json({
-  //   status: "success",
-  //   data: { user },
-  // });
+exports.getUser = async (req, res) => {
+  let query = await User.findById(req.params.id);
+
+  res.status(500).json({
+    status: "success",
+    data: { query },
+  });
 };
 exports.updateUser = (req, res) => {
   // const id = req.params.id * 1;
