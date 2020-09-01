@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hashirshoaeb/FYP-Manager-backend.git"
+    "url": "git+https://github.com/khizarkhizar/Hybrid_App.git"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -18,9 +18,9 @@
   "author": "Hashir Shoaib",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hashirshoaeb/FYP-Manager-backend/issues"
+    "url": "https://github.com/khizarkhizar/Hybrid_App.git/issues"
   },
-  "homepage": "https://github.com/hashirshoaeb/FYP-Manager-backend#readme",
+  "homepage": "https://github.com/khizarkhizar/Hybrid_App.git#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
